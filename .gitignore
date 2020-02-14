@@ -1,0 +1,10 @@
+# Блочимо файли які створюються на Mac
+.DS_Store
+.ApplDouble
+.LSOverride
+
+# Блочимо файли які створюються VSCode
+.vs
+
+node_modules/
+app/css/
