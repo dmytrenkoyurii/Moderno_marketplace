@@ -336,6 +336,103 @@
 }
 
 // END HEADER
+// START MODAL
+#modal {
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.login__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    @include f700;
+}
+
+.login__wrapper {
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label {
+        position: relative;
+        display: block;
+        width: 100%;
+        &::before {
+            position: absolute;
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 14px;
+            left: 18px;
+            top: 9px;
+        }
+    }
+    .login__label-name::before {
+        content: "\f007";
+    }
+    .login__label-pass::before {
+        content: "\f023";
+    }
+    input {
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        background-color: #76ae36;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 40px;
+        display: block;
+        width: 100%;
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    button {
+        margin-top: 19px;
+        padding: 18px 0 16px;
+        background-color: #fff;
+        width: 140px;
+        text-transform: uppercase;
+        border: none;
+        margin-right: 10px;
+        @include f700;
+        color: #000000;
+        text-align: center;
+        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+    }
+}
+
+.create-acc {
+    margin-top: 19px;
+    padding: 15px 0 14px 25px;
+    text-align: center;
+    width: 245px;
+    background-color: #76ae36;
+    font-size: 18px;
+    position: relative;
+    color: #fff;
+    &::before {
+        content: "\f044";
+        font-family: 'icomoon';
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+}
+
+.lost-pass {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+// END MODAL
 // START SEARCH
 .search {
     background-image: url(../images/search-bg.jpg);
@@ -1435,5 +1532,246 @@ button.icon-unsorted {
     }
 }
 
+.price__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.price__product {
+    font-size: 22px;
+    @include f500;
+    color: $red;
+}
+
+.product__price {
+    button {
+        box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+        margin-bottom: 7px;
+        border: none;
+        background-color: $text;
+        color: #fff;
+        font-size: 16px;
+        @include f700;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif !important;
+        text-align: center;
+        display: block;
+        padding: 17px 5px 15px;
+        width: 100%;
+        cursor: pointer;
+        &::before {
+            font-weight: 400;
+            font-size: 16px;
+            font-family: 'icomoon';
+            padding-right: 7px;
+        }
+    }
+    .icon-shopping-cart {
+        background-color: $green;
+    }
+    .icon-heart-o {
+        background-color: #42a5f5;
+    }
+}
+
+.product-author__box {
+    padding: 25px 0;
+    display: flex;
+}
+
+.author__avatar {
+    margin-right: 14px;
+}
+
+.author__name {
+    font-size: 18px;
+    color: $bg;
+    margin-bottom: 4px;
+}
+
+.author-info__link {
+    font-size: 13px;
+    color: #707070;
+    border: 1px solid #d6d6d6;
+    padding: 5px 9px 4px;
+    cursor: pointer;
+}
+
+.author_awards-list {
+    li {
+        color: #fff;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            top: 6px;
+            left: 0;
+            right: 0;
+        }
+        &+li {
+            margin-left: 4px;
+        }
+    }
+}
+
+.icon-meh-o {
+    background-image: url(../images/product-one/award-1.png);
+    width: 34px;
+    height: 37px;
+}
+
+.icon-pagelines {
+    background-image: url(../images/product-one/award-2.png);
+    width: 34px;
+    height: 37px;
+}
+
+.icon-flash {
+    background-image: url(../images/product-one/award-3.png);
+    width: 34px;
+    height: 37px;
+}
+
+.icon-foursquare {
+    background-image: url(../images/product-one/award-4.png);
+    width: 34px;
+    height: 37px;
+}
+
+.icon-yen {
+    background-image: url(../images/product-one/award-5.png);
+    width: 34px;
+    height: 37px;
+}
+
+.aside__item-sales {
+    padding-top: 20px;
+    font-size: 16px;
+    @include f300;
+    color: #707070;
+    span {
+        @include f700;
+        font-size: 20px;
+        color: #263238;
+        padding-right: 13px;
+        &::before {
+            content: "\f07a";
+            color: #a6b5bb;
+            padding-right: 20px;
+            font-family: 'icomoon';
+        }
+    }
+}
+
+.aside__item.sales-number {
+    padding-bottom: 25px;
+}
+
+.info__line {
+    font-size: 14px;
+    color: #70838d;
+    margin-top: 20px;
+    line-height: 18px;
+    span {
+        color: #263238;
+        @include f500;
+    }
+}
+
 // END product-one
+// START PAGE 404
+.page-404 {
+    background-color: $grey;
+}
+
+.container {}
+
+.page-404__wrapper,
+.about__wrapper {
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+
+.page-404__head,
+.about__head {
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 24px;
+    color: #444;
+    padding: 23px 27px;
+    @include f500;
+}
+
+.page-404__inner {
+    text-align: center;
+    background-color: $green;
+    color: #fff;
+}
+
+.page-404__404 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 300px;
+    line-height: 300px;
+    padding-top: 70px;
+    position: relative;
+    padding-right: 130px;
+    padding-bottom: 20px;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/page-404.png);
+        width: 150px;
+        height: 292px;
+        margin-left: 15px;
+    }
+}
+
+.page-404__title {
+    margin-bottom: 30px;
+    @include f300;
+    font-size: 30px;
+}
+
+.page-404__text {
+    max-width: 505px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.page-404__link {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 20px 30px 16px;
+    margin-bottom: 100px;
+}
+
+// END PAGE 404
+// START ABOUT
+.about__inner {
+    padding: 0px 50px;
+}
+
+.about__box {
+    h3 {
+        font-size: 20px;
+        @include f700;
+        color: #444;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+// END ABOUT
 @import 'media';

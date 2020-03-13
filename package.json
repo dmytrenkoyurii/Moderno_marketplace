@@ -9,6 +9,7 @@
     "author": "YuriiHorskyi",
     "license": "ISC",
     "dependencies": {
+        "@fancyapps/fancybox": "^3.5.7",
         "ion-rangeslider": "^2.3.1",
         "save-dev": "0.0.1-security"
     },
