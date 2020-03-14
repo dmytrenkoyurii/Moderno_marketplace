@@ -38,6 +38,15 @@ body {
     color: $text;
 }
 
+.page-404,
+.contact,
+.about,
+.profile,
+.settings,
+.withdrawals {
+    background-color: $grey;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
