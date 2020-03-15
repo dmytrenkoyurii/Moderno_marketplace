@@ -10,8 +10,35 @@ $(function() {
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
-        dots: true
-
+        dots: true,
+        responsive: [{
+                breakpoint: 1900,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1450,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 890,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
     });
 
     $(".js-range-slider").ionRangeSlider({
@@ -22,7 +49,6 @@ $(function() {
         from: 0,
         to: 600,
         prefix: "$"
-
     });
 
     $('.icon-th-list').on('click', function() {
